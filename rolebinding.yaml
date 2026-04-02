@@ -9,5 +9,5 @@ subjects:
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
-  name: pod-manager
+  name: pod-role
   apiGroup: rbac.authorization.k8s.io

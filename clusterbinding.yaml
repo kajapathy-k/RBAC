@@ -3,10 +3,16 @@ kind: ClusterRoleBinding
 metadata:
   name: raj-pod-cluster-access
 subjects:
-  - kind: User
-    name: raj
-    apiGroup: rbac.authorization.k8s.io
+- kind: User
+  name: raj
+  apiGroup: rbac.authorization.k8s.io
+
+- kind: ServiceAccount
+  name: kajapathy-sa
+  namespace: gateway-ns
+  apiGroup: rbac.authorization.k8s.io
+  
 roleRef:
   kind: ClusterRole
-  name: pod-cluster-role
+  name: kajapathy-pod-cluster-role
   apiGroup: rbac.authorization.k8s.io

@@ -6,7 +6,7 @@ subjects:
 - kind: Group
   name: development-team
   apiGroup: rbac.authorization.k8s.io
-roleref:
+roleRef:
   kind: ClusterRole
   name: dev-cluster-role
   apiGroup: rbac.authorization.k8s.io

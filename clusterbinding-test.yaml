@@ -4,7 +4,7 @@ metadata:
   name: test-cluster-binding
 subjects:
 - kind: Group
-  name: testing-group
+  name: testing
   apiGroup: rbac.authorization.k8s.io
 
 roleRef:

@@ -4,7 +4,7 @@ metadata:
   name: pod-cluster-role
 rules:
   - apiGroups: [""]
-    resources: ["pods"]
+    resources: ["nodes","namespaces","pods"]
     verbs: ["get","list","watch"]
 
 
